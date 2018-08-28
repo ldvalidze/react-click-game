@@ -65,11 +65,43 @@ let gamecards = [
 ]
 
 class Game extends Component {
+  // state = {
+  //   count: 0
+  // };
+
+  // handleIncrement = () => {
+  //   // We always use the setState method to update a component's state
+  //   this.setState({ count: this.state.count += 1 });
+  //   console.log(this.state.count);
+  // };
+
+  // shuffle = array => {
+  //   var currentIndex = array.length, temporaryValue, randomIndex;
+
+  //   // While there remain elements to shuffle...
+  //   while (0 !== currentIndex) {
+
+  //     // Pick a remaining element...
+  //     randomIndex = Math.floor(Math.random() * currentIndex);
+  //     currentIndex -= 1;
+
+  //     // And swap it with the current element.
+  //     temporaryValue = array[currentIndex];
+  //     array[currentIndex] = array[randomIndex];
+  //     array[randomIndex] = temporaryValue;
+  //   }
+
+  //   return array;
+  // }
+
+  // gamecards = this.shuffle(gamecards);
+
   render() {
     return (
       <GamecardsList gamecards={gamecards}/>
     );
   }
+
 }
 
 export default Game;
